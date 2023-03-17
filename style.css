@@ -113,10 +113,26 @@ button.b{
 	margin-left: 20px;
 	margin-right: 10px;
 }
+
+.alinear-izquierda-img-redo{
+	float: left;
+	padding: auto;
+	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 10px;
+	border-radius: 5%;
+}
 .alinear-izquierda-img-memac{
 	float: left;
 	padding: auto;
 	margin-top: 10px;
+	margin-left: 20px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}
+.alinear-derecha-img{
+	float: right;
+	padding: auto;
 	margin-left: 20px;
 	margin-right: 10px;
 	margin-bottom: 20px;
@@ -151,6 +167,7 @@ button.b{
 	transition-duration: 1s; 
 	margin-bottom: 20px;
 }
+
 .linea-sep{
 	height: 7px;
 	width: auto;
@@ -181,4 +198,11 @@ button.b{
 	width: 600px;
 	height: auto;
 	float: left;
+	margin-top: 50px;
+}
+.proyect-img-derecha{
+	display: inline-block;
+	width: 600px;
+	height: auto;
+	margin-top: 50px;
 }
