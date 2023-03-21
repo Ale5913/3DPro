@@ -6,14 +6,16 @@
 <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
 <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
 
 </head>
 <header>
   <section class="wrapper">
+			<!-- 	barra de navegacion -->
 		<nav>
 			<ul>
-			<!-- 	barra de navegacion -->
-				<li><img src="PNG/3D Pro Icon.png" width="70" height="70" />
+				<img class="alinear-izquierda-img" src="PNG/3D Pro Icon.png" width="50" height="50">
 				<li><a href="#3dPro">Grupo 3D Pro</a></li>
 				<li ><a href="#quienesSomos">¿Quienes somos?</a></li>
 				<li><a href="#Portafolio">Empresas</a></li>
@@ -33,7 +35,17 @@
 	</div>
   </nav>
 <section id="3dPro" class="contenido wrapper"> 
-	<div><img src="PNG/3D Pro.png" width="350" height="400" class="alinear-derecha-img">  </div>
+	<div id="circle" class="alinear-derecha-log" >
+		<div><img src="PNG/3D Pro.png" width="250" height="280" class="alinear-derecha-log">  </div>
+		<div> <a href="Quienes somos.html" ></a> <img src="PNG/3D ADV.png" class="element"></div>
+		<div><img src="PNG/3D AS Aut Motive.png" class="element"></div>
+		<div> <img src="PNG/3D B&S.png" class="element"></div>
+		<div> <img src="PNG/3D Energy.png" class="element"></div>
+		<div> <img src="PNG/3D Potencia.png" class="element"></div>
+		<div> <img src="PNG/3D Solar.png" class="element"></div>
+		<div> <img src="PNG/3D World Class Programming.png" class="element"></div>
+		<div>  <img src="PNG/3D Pro.png" class="element"></div>
+	  </div>
 		<div class="b" style="font-size: 35px; color:#707070">GRUPO 3D PRO</div>
 		<div class="b" style="font-size: 62px; color:#06324D">Impulsor Integral <br>de Innovación</div>
 		<div class="b" style="font-size: 41px; color:#787A99">Enfocados en nuestras 3D <br> DIGITALIZACIÓN <br> DESCENTRALIZACIÓN <br> DESCARBONIZACIÓN <br> Y PROYECTOS DE VALOR AGREGADO</div>
@@ -60,9 +72,9 @@
 	</div>	
 	<div class="linea-sep" > </div>
 	<div class="contenido wrapper">
-		<img src="PNG/3D Pro.png" width="350" height="400" class="alinear-izquierda-text"> 
-        <div class="a" style="font-size: 62px; color:#06324D">¿Quiénes Somos?</div>
-		<div class="a" style="font-size: 25px; color:#787A99">3DPRO es un conjunto de empresas que generan <br>
+		<img src="PNG/3D Pro.png" width="400" height="300" class="alinear-izquierda-text"> 
+        <div class="a" style="font-size: 52px; color:#06324D">¿Quiénes Somos?</div>
+		<div class="a" style="font-size: 20px; color:#787A99">3DPRO es un conjunto de empresas que generan <br>
             sinergias entre si, enfocados en realizar proyectos de las
             <br>
             3”D” de la energía, Brindando flexibilidad y rapidez en la
@@ -73,7 +85,7 @@
             <br>
             presencia en todo el Territorio Nacional.
             <br>
-            <button  name="button" class="a"><a  style="text-decoration:none" href="#Contactanos">Contactanos</a></button>
+            <button  name="button" class="d"><a  style="text-decoration:none" href="#Contactanos">Contactanos</a></button>
         </div>
 	</div>
 </div>
@@ -145,64 +157,79 @@
 <section>
 <!-- 	Imagenes de proyectos poner imagenes corresponientes  -->
 <div class="contenido wrapper" id="Proyectos">
-	<div class="card-group">
-		<div class="card">
-		  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp" class="card-img-top" alt="Hollywood Sign on The Hill"/>
-		  <div class="card-body">
-			<h5 class="card-title">Nombre del proyecto</h5>
-			<p class="card-text">
-			 Descripcion del proyecto
-			</p>
-			<p class="card-text">
-			  <small class="text-muted">Last updated 3 mins ago</small>
-			</p>
-			<button> <a href="Quienes somos.html" >Info</a></button>
-		  </div>
-		</div>
-		<div class="card">
-		  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/042.webp" class="card-img-top" alt="Palm Springs Road"/>
-		  <div class="card-body">
-			<h5 class="card-title">Nombre del proeycto</h5>
-			<p class="card-text">Descripcion del proeycto</p>
-			<p class="card-text">
-			  <small class="text-muted">Last updated 3 mins ago</small>
-			</p>
-			<button> <a href="Quienes somos.html" >Info</a></button>
-		  </div>
-		</div>
-		<div class="card">
-		  <img src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp" class="card-img-top" alt="Los Angeles Skyscrapers"/>
-		  <div class="card-body">
-			<h5 class="card-title">Nombre del proyecto</h5>
-			<p class="card-text">
-			  Descricpion del proyecto
-			</p>
-			<p class="card-text">
-			  <small class="text-muted">Last updated 3 mins ago</small>
-			</p>
-			<button> <a href="Quienes somos.html" >Info</a></button>
-		  </div>
-		</div>
+	<title>Responsive Owl Carousel | Free Download</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+	<section id="slider" class="pt-5">
+	  <div class="container">
+		<h1 class="text-center"><b>Proyectos insignia</b></h1>
+		  <div class="slider">
+					<div class="owl-carousel">
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4"> 
+								<a href="Quienes somos.html" > <img src="PNG/Aseguran pipa de gas.jpg"> </a>
+							</div>
+							<h5 class="mb-0 text-center"><b>Proyecto</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<a href="Quienes somos.html" > <img src="PNG/Aseguran pipa de gas.jpg"> </a>
+							</div>
+							<h5 class="mb-0 text-center"><b>Proyecto</b></h5>
+							<p class="PNG/Aseguran pipa de gas.jpg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<a href="Quienes somos.html" > <img src="PNG/Aseguran pipa de gas.jpg"> </a>
+							</div>
+							<h5 class="mb-0 text-center"><b>Proyecto</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<a href="Quienes somos.html" > <img src="PNG/Aseguran pipa de gas.jpg"> </a>
+							</div>
+							<h5 class="mb-0 text-center"><b>Proyecto</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+						<div class="slider-card">
+							<div class="d-flex justify-content-center align-items-center mb-4">
+								<a href="Quienes somos.html" > <img src="PNG/Aseguran pipa de gas.jpg"> </a>
+							</div>
+							<h5 class="mb-0 text-center"><b>Proyecto</b></h5>
+							<p class="text-center p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.</p>
+						</div>
+					</div>
+				</div>
 	  </div>
+	</section>
 </section>
-
-<!-- Fromulario  -->
+<!-- proyectos  -->
 <section class="contenido wrapper" id ="Portafolio"> 
 	<div class="c" style="font-size: 30px; color:#06324D">Portafolio</div>
-	<div class="c" style="font-size: 25px; color:#787A99">Ultimos Proyectos</div>
-	<div class="obj-container">
-		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="550" height="auto">
+	<div class="c" style="font-size: 15px; color:#787A99">Ultimos Proyectos</div>
+	<div class="obj-container-2" style="align-items: center;">
+		<img class="alinear-izquierda-img-redo"  src="PNG/proyecto.jpg" width="500" height="auto">
 	</div>
-	<div class="obj-container">
-		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="550" height="auto">
+	<div class="obj-container-2">
+		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="500" height="auto">
 	</div>
-	<div class="obj-container">
-		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="550" height="auto">
+	<div class="obj-container-2">
+		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="500" height="auto">
 	</div>
-	<div class="obj-container">
-		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="550" height="auto">
+	<div class="obj-container-2">
+		<img class="alinear-izquierda-img-redo" src="PNG/proyecto.jpg" width="500" height="auto">
 	</div>
 </section>
+<!-- Fromulario  -->
+<br>
+<br>
 <section id ="Contactanos"> 
     <div class="container" id="registration-form">
         <div >
@@ -230,6 +257,7 @@
 				<div class="form-group">
                     <button type="submit" class="b">Contactanos</button>
                 </div>
+				<br>
             </form>
         </div>
     </div>
@@ -242,7 +270,56 @@
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
+
 <script>
+
+const circles = document.querySelectorAll('.element')
+
+const n = 8;  // numero de circulos
+const r = 240// radio
+
+let angulo = 0;
+let originX = circles[0].offsetLeft
+let originY = circles[0].offsetTop
+
+setInterval(() => {
+ angulo += 0.01
+ circles.forEach((element,i) =>{
+ element.style.left = `${originX + r*Math.cos(angulo + 2*Math.PI/n*i)}px`
+ element.style.top = `${originY + r*Math.sin(angulo + 2*Math.PI/n*i)}px`})
+},100)
+</script>
+<script>
+	$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+      loop:true,
+    margin:10,
+    nav:true,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    center: true,
+    navText: [
+        "<i class='fa fa-angle-left'></i>",
+        "<i class='fa fa-angle-right'></i>"
+    ],
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:3
+        }
+    }
+  });
+})
 	//Prueba de email abre el correo no lo manda
 	//const $form= document.querySelector('$form')
 /* 	//const $buttonMailto=document.querySelector()
@@ -253,4 +330,4 @@
 		console.log(form.get('name'))	
 		$buttonMailto.setAttribute('href',`mailto:alexaivey69@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
 		$buttonMailto.click()
-	}  */
+	}  */</script>
