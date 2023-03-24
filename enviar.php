@@ -1,15 +1,16 @@
 <?php
-    $nombre =$_POST['nombre'];
-    $email =$_POST['email'];
-    $asunto =$_POST['asunto'];
-    $mensaje =$_POST['mensaje'];
-     
-$mensaje = "Este mensaje fue enviado por " . $nombre . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Asunto: " . $_POST['asunto'] . " \r\n";
-$mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
-$mensaje .= "Enviado el " . date('d/m/Y', time());
+// Recoger los datos del formulario
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$mensaje = $_POST['mensaje'];
+$asunto = $_POST['asunto'];
 
-$para = 'alexaivey69@gmail.com';
-mail($para, $asunto, $string($mensaje), $header);
+// Configurar el correo electrónico
+$destinatario = 'alexaivey69@gmail.com';
+$asunto = 'Formulario de contacto';
+$cuerpo = "Nombre: $nombre\nCorreo electrónico: $email\nMensaje: $mensaje";
+$headers = "From: remitente@ejemplo.com\r\nReply-To: $email\r\nX-Mailer: PHP/" . phpversion();
+
+// Enviar el correo electrónico
+mail($destinatario, $asunto, $cuerpo, $headers);
 ?>
