@@ -15,7 +15,7 @@
 
   }
   header {
-	background: rgb(157,170,187);
+	background: rgb(195, 199, 204);
 	width: 100%;
 	height: auto;
 	position: fixed;
@@ -60,26 +60,24 @@
 	  Background: #D8E0EA;
 	  font-family: 'Roboto';
 	}
-div.b {
+div.b {	
 	text-align: left;
 	font-family: 'Roboto';
 	margin-top: 20px;
 	}
 div.a {
-		text-align:right;
+		text-align:right justify;
 		font-family: 'Roboto';
 		margin-top: 5x;
 		}
 div.c {
 	text-align:center;
-	padding-top: 10px;
 	font-family: 'Roboto';
-	margin-top: 10px;
 	}
 	
 button.d{
 	margin-top: 20px;
-	background-color: #06324D;
+	background-color: #BECBDE;
 	border: none;
 	color: white;
 	padding: 15px 32px;
@@ -126,11 +124,11 @@ button.b{
 .alinear-izquierda-img-redo{
 	float: left;
 	padding: auto;
-	margin-top: 10px;
-	margin-left: 20px;
+	margin-left:45%;
 	margin-right: 10px;
 	border-radius: 5%;
 	box-sizing: border-box;
+	margin-right: 100px;
 }
 .alinear-izquierda-img-memac{
 	float: left;
@@ -170,11 +168,13 @@ button.b{
 	margin-top: 20px;
 	width: auto;
 	box-sizing: border-box;
+	
 }
 .obj-container-2{
 	display: inline-block;
 	align-items: center;
 	box-sizing: border-box;
+	height: 300px;
 
 }
 .logos-container{
@@ -218,7 +218,6 @@ button.b{
     min-width: 250px;
     padding: 0 35px;
     background-size: 100% 100%;
-    background-color: white;
 	box-sizing: border-box;
 }
 
@@ -229,6 +228,7 @@ button.b{
 }
 
 #registration-form .form-control{
+	
 	width: 90%;
 	padding: 12px 20px;
 	height: auto;
@@ -346,7 +346,7 @@ body {
 	background: #06324D !important;
 
 }
-@media screen and (max-width:800px){
+@media only screen and (min-width: 600px) {
 	.navbar-collapse{height:auto !important}
 	.alinear-izquierda-img-form´{
 		float: initial;
@@ -355,6 +355,7 @@ body {
 	.alinear-derecha-log{
 		float: inline-start;
 		margin-bottom: 100px;
+		width: auto;
 	}
 	.element{
 		float: inline-start;
@@ -363,5 +364,179 @@ body {
 		align-content: flex-end;
 		float: inline-end;
 	}
+	.circle{
+		width: 30%;
+		align-self: flex-start;
+	}
 
+}
+.containercards{
+    display: flex;
+    width:auto;
+    height: auto;
+    margin: 30px auto;
+	padding-left: 200px;
+    }
+.box{
+    width: 300px;
+    height: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+    border: 1px solid #ccc;
+    margin-right: 9%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+	background-color: #06324D;
+}
+.boxa{
+	margin-top: 60px;
+    width: 300px;
+    height: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+    border: 1px solid #ccc;
+    margin-right: 9%;
+    background: white;
+    border-radius: 10px;
+    transition: 0.9;
+	background-color: #99bdd3;
+    }
+	.boxb{
+		margin-top: 90px;
+		width: 300px;
+		height: auto;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		border: 1px solid #ccc;
+		margin-right: 9%;
+		background: white;
+		border-radius: 10px;
+		transition: 0.9;
+		background-color: #06324D;
+		}
+
+    .box:hover{
+    box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    }
+	.boxa:hover{
+		box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+	}
+	.boxb:hover{
+		box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+		cursor: pointer;
+		}
+    img.cards{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    }
+    h3,p{
+    text-align: justify;
+    color: white;
+	margin-left: 10%;
+	margin-right: 3%;
+    }
+	p.c{
+		text-align: justify;
+		color: white;
+		margin-left: 30%;
+		font-size: 25px;
+	}
+	h3.a{
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	}
+    p.a{
+    font-size: 25px;
+    padding: 0 5px;
+    }
+    i,h6,a{
+    text-align: left;
+    text-decoration: none;
+    }
+    @media (max-width: 800px){
+    .containercards{
+    width: 100%;
+    }
+    }
+    @media (max-width: 600px){
+    .containercards{
+    width: 85%;
+    display: block;
+    }
+    .boxcards{
+    width: 100%;
+    margin-bottom: 4%;
+    }
+}
+
+div.filo{
+	font-size: 50PX;
+	color: #06324D;
+	text-align: center;
+}
+
+.column-container {
+	display: flex;
+	flex-wrap: wrap;
+	width: 1200px;
+	margin-left: 100px;
+  }
+  
+  .column-1, .column-2 {
+	flex-basis: 50%;
+	box-sizing: border-box;
+  }
+  
+  @media (max-width: 768px) {
+	.column-1, .column-2 {
+	  flex-basis: 100%;
+	}
+  }
+.columnas {
+	column-count: 2; /* Divide el contenido en dos columnas */
+	column-gap: 20px; /* Espacio entre columnas */
+ }
+p.columna{
+	font-size: 35px;
+	text-align: justify;
+	color: #7c7c7c;
+	margin-left: 100px;
+	
+}
+p.columnab{
+	font-size: 26px;
+	color: #7c7c7c;
+	text-align: justify;
+}
+.colored-letter {
+	color:#06324D;
+  }
+  .colored-letter2 {
+	color:#FDBC2D;
+  }
+  .colored-letter3 {
+	color:#53796E;
+  }
+  
+  .alinear-derecha-pag{
+	float: right;
+	margin-right: 70px;
+	margin-bottom: 20PX;
+	margin-top: 0%;
+}
+div.b2 {	
+	text-align: left;
+	font-family: 'Roboto';
+	margin-top: 10px;
+	}
+div.legal{
+	width:85%;
+	text-align:justify;
+	margin-left: 10%;
+	font-size: 20px;
 }

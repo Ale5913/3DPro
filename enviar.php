@@ -1,16 +1,20 @@
-<?php
-// Recoger los datos del formulario
+<?php  
+
+// Llamando a los campos
 $nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
+$correo = $_POST['correo'];
 $asunto = $_POST['asunto'];
+$mensaje = $_POST['mensaje'];
 
-// Configurar el correo electrónico
-$destinatario = 'alexaivey69@gmail.com';
-$asunto = 'Formulario de contacto';
-$cuerpo = "Nombre: $nombre\nCorreo electrónico: $email\nMensaje: $mensaje";
-$headers = "From: remitente@ejemplo.com\r\nReply-To: $email\r\nX-Mailer: PHP/" . phpversion();
+// Datos para el correo
+$destinatario = "alexaivey69@gmail.com";
 
-// Enviar el correo electrónico
-mail($destinatario, $asunto, $cuerpo, $headers);
+$carta = "De: $nombre \n";
+$carta .= "Correo: $correo \n";
+$carta .= "Asunto: $asunto \n";
+$carta .= "Mensaje: $mensaje";
+
+// Enviando Mensaje
+mail($destinatario, $asunto, $carta);
+
 ?>
